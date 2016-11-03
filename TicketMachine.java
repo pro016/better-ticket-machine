@@ -96,6 +96,7 @@ public class TicketMachine
                     System.out.println("# " + price + " cents.");
                     System.out.println("##################");
                     System.out.println();
+                    cont = cont + 1;
                     // Simulate the printing of a ticket.
                     System.out.println("##################");
                     System.out.println("# The BlueJ Line");
