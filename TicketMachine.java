@@ -18,9 +18,9 @@ public class TicketMachine
     // The total amount of money collected by this machine.
     private int total;
     
-    private boolean premio;
+    private boolean premio; //Atributos sin comentarios
     
-    private int maxTicket;
+    private int maxTicket; 
     
     private int cont;
 
@@ -32,14 +32,14 @@ public class TicketMachine
     {
         if (premiada == true){
             price = cost;
-            premio = premiada;
+            premio = premiada;  
             maxTicket = max;
             balance = 0;
             total = 0;
             cont = 0;
         }
         else{
-            price = cost;
+            price = cost;  //Algunos atributos como premio no se inicializan en este caso
             maxTicket = max;
             balance = 0;
             total = 0;
@@ -90,7 +90,7 @@ public class TicketMachine
             cont = cont +1;
             if (cont <= maxTicket){
                 if (premio == true){
-                    System.out.println("##################");
+                    System.out.println("##################"); //Solución no optima, código repetido
                     System.out.println("# The BlueJ Line");
                     System.out.println("# Ticket");
                     System.out.println("# " + price + " cents.");
@@ -106,7 +106,7 @@ public class TicketMachine
                     System.out.println();
 
                     // Update the total collected with the price.
-                    total = total + price;
+                    total = total + price;      //Esto debería ejecutarse también en la parte else
                     // Reduce the balance by the prince.
                     balance = balance - price;
                 }
